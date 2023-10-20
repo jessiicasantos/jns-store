@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default function Home() {
-  return <div className="bg-blue-500 text-red-500">Test Prettier</div>;
+  return <div></div>;
 }
 
 // ctrl+shift+p > Format Document With... > Configure Default Formatter... > Prettier - Code formatter
