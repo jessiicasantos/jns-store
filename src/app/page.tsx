@@ -1,7 +1,9 @@
-import Image from "next/image";
+"use client";
+
+import { useSession } from "next-auth/react";
 
 export default function Home() {
-  return <div>Home</div>;
-}
+  const { data } = useSession();
 
-// ctrl+shift+p > Format Document With... > Configure Default Formatter... > Prettier - Code formatter
+  return <div>{data?.user?.name}</div>;
+}
