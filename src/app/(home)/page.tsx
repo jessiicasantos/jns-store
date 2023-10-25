@@ -23,16 +23,17 @@ const Home = async () => {
   });
 
   return (
-    <div>
+    <div className="flex flex-col gap-8">
       <PromoBanner
         src="/banner-home-01.png"
-        alt="Até 55% de deseconto esse mês!"
+        alt="Até 55% de desconto esse mês!"
       />
-      <div className="mt-8">
+
+      <div className="px-5">
         <Categories />
       </div>
 
-      <div className="mt-8">
+      <div>
         <SectionTitle className="mb-2 pl-5 font-bold uppercase">
           Ofertas
         </SectionTitle>
@@ -44,9 +45,16 @@ const Home = async () => {
         alt="Até 50% de desconto esse mês!"
       />
 
-      <div className="mt-8">
+      <div>
         <SectionTitle>Teclados</SectionTitle>
         <ProductList products={keyboards} />
+      </div>
+
+      <div>
+        <PromoBanner
+          src="/banner-home-03.png"
+          alt="Até 20% de desconto em Fones!"
+        />
       </div>
     </div>
   );
