@@ -14,7 +14,7 @@ interface CategoryItemProps {
 }
 
 const CategoryItem = ({ category }: CategoryItemProps) => {
-  let categoryIcon = {
+  const categoryIcon = {
     keyboards: <KeyboardIcon size={16} />,
     monitors: <MonitorIcon size={16} />,
     headphones: <HeadphonesIcon size={16} />,
