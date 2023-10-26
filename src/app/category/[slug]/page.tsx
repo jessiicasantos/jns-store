@@ -2,7 +2,6 @@ import { Badge } from "@/components/ui/badge";
 import ProductItem from "@/components/ui/product-item";
 import { computeProductTotalPrice } from "@/components/ui/helpers/product";
 import { prismaClient } from "@/lib/prisma";
-import { ShapesIcon } from "lucide-react";
 import { CATEGORY_ICON } from "@/app/constants/category-item";
 
 const CategoryProducts = async ({ params }: any) => {
