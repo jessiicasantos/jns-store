@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { ProductWithTotalPrice } from "./helpers/product";
-
 import Link from "next/link";
 import DiscountBadge from "./discount-badge";
 
