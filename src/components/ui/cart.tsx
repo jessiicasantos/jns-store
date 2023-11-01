@@ -1,9 +1,9 @@
 import { ShoppingCartIcon } from "lucide-react";
-import { Badge } from "./ui/badge";
+import { Badge } from "./badge";
 import { useContext } from "react";
 import { CartContext } from "@/providers/cart";
-import CartItem from "./ui/cart-item";
-import { computeProductTotalPrice } from "./ui/helpers/product";
+import CartItem from "./cart-item";
+import { computeProductTotalPrice } from "./helpers/product";
 
 const Cart = () => {
   const { products } = useContext(CartContext);
