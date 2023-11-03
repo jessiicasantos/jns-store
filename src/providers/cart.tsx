@@ -48,7 +48,7 @@ const CartProvider = ({ children }: { children: ReactNode }) => {
   // Total com descontos
   const total = useMemo(() => {
     return products.reduce((acc, product) => {
-      return acc + product.totalPrice;
+      return acc + product.totalPrice * product.quantity;
     }, 0);
   }, [products]);
 
