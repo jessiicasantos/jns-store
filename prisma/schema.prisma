@@ -30,6 +30,10 @@ model Product {
   discountPercentage Int      @default(0)
 }
 
+// Criar schema de order e colocar dados do pedido, como a data e etc
+// model Order {
+// }
+
 model Account {
   id                String  @id @default(cuid())
   userId            String
